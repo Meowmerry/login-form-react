@@ -39,4 +39,9 @@ const Login = (data) => {
         }
     })
 }
-export { Login, Register, UserDetail_path, ErrorMessage, SeccessMessage, ErrorLoginMessage, SeccessLoingMessage }
+const UserDetailsData = async(data) => {
+   const res = await axios.get(UserDetail_path);
+   console.log('res', res)
+}
+//UserDetailsData()
+export { Login, Register, ErrorMessage, SeccessMessage, ErrorLoginMessage, SeccessLoingMessage }

@@ -12,9 +12,6 @@ app.use(cors())
 
 // Register Route
 
-
-
-
 app.post("/register", validateUsernameAndPassword, async (req, res) => {
     const { username, password } = req.body;
     // Check if the username already exists
